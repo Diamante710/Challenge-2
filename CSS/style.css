@@ -27,6 +27,7 @@ header nav {
     font-size: 35px;
 }
 
+/* all header nav ul refers to listing and font elements for navigation bar */
 header nav ul {
     list-style: none;
 }
