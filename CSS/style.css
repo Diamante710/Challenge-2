@@ -69,49 +69,92 @@ section p {
 
 /* styles the container for the work/hustle section of the webpage */
 #work {
-    display: flex;
-    justify-content: space-evenly;
     align-items: left;
     box-sizing: border-box;
-  }
+    padding: 50px;
+}
 
 #work h2 {
     font-size: 40px;
     font-weight: bolder;
     margin-top: 100px;
+    text-align: left;
 }
+/* coding class applies to first element only of work section */
 
-/* styles the image cards within the work section */
-.card {
-    padding: 10px;
+.coding {
+    padding: 20px;
     margin: 20px;
     flex: 0 0 300px;
     border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    max-height: 650px;
 }
 
-.card:hover {
-    background-color: purple;
-}
-  
-  .card header {
+.coding header {
     color: whitesmoke;
     padding: 20px;
     font-size: 25px;
     text-align: center;
     border-radius: 50px 50px 0px 0px;
-  }
-  
-  .card header a {
+}
+
+.coding header a {
     text-decoration: none;
     color: whitesmoke;
-  }
+}
 
-  .card img {
+.coding img {
     width: 100%;
+    max-height: 500px;
     border-radius: 50px;
-  }
+}
 
-  /* styles the list portion of the contact me section */
+.coding:hover {
+    background-color: purple;
+}
+
+#grind {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 100px;
+    max-width: 100%;
+
+}
+
+/* styles the image cards within the work section */
+.card {
+    padding: 20px;
+    margin: 20px;
+    flex: 0 0 300px;
+    border-radius: 30px;
+    max-width: 40%;
+    max-height: 100%;
+}
+
+.card:hover {
+    background-color: purple;
+}
+
+.card header {
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 50px;
+}
+
+/* styles the list portion of the contact me section */
 div ul li {
     font-size: 30px;
     color: whitesmoke;
@@ -140,5 +183,9 @@ footer {
     color: whitesmoke;
     bottom: 0;
     width: 100%;
+}
 
+/* adjust size of website to display size */
+@media screen and (max-width: 992px) {
+    
 }
